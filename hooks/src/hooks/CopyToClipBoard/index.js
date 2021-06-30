@@ -6,15 +6,17 @@ function Copy() {
   const [isCopied, handleCopy] = useCopyToClipboard();
 
   function onCopyText(text) {
-    if (text) handleCopy(text);
-    else {
+    if (text) {
+      handleCopy(text);
+      setText("");
+    } else {
       alert("Please type something in the box to copy");
     }
   }
   return (
     <>
-      <h2>useCopyToClipboard</h2>
-      <div className="copy-container">
+      <h2>1. Copy Text To Clipboard</h2>
+      <div className="hook-container">
         <input
           type="text"
           value={text}

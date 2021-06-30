@@ -15,33 +15,33 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.copy-container {
+.hook-container {
   padding: 24px;
   background: #999eee;
   color: white;
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 24px;
 }
 
-.copy-container input {
+.hook-container input {
   padding: 12px;
   border: none;
 }
 
-.copy-container button {
+.hook-container button {
   padding: 12px;
   margin-left: 12px;
   border: none;
 }
 
-.copy-container span {
+.hook-container span {
   padding: 12px;
   font-weight: bolder;
   font-size: 18px;
@@ -57,4 +57,39 @@ code {
   width: 25%;
   border-radius: 5px;
   box-shadow: 2px 2px 5px 2px rgb(0 0 0 / 44%);
+}
+
+.horizontal-scroll {
+  padding: 24px;
+  background: #999eee;
+  color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  width: 1300px;
+  margin-bottom: 24px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.horizontal-scroll .beerDiv {
+  flex-direction: row;
+}
+
+.btn {
+  border: none;
+  margin-bottom: 12px;
+  background: #999eee;
+  width: auto;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }

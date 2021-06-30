@@ -23,7 +23,7 @@ export default function PageBottom() {
   return (
     <>
       <h2>usePageBottom</h2>
-      <div className="copy-container">
+      <div className="hook-container">
         {data.map((d) => (
           <Beer key={d.id} {...d} />
         ))}
